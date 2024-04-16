@@ -1,3 +1,5 @@
+-- la tabla de peliculas pendientes tiene un fallo y no esta correctamente creada
+-- Las sentencias de insert pueden simplificar en una sola
 DROP TABLE IF EXISTS personas;
 DROP TABLE IF EXISTS pelicula;
 

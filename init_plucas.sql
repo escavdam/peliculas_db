@@ -1,3 +1,4 @@
+-- todo ok! muy bien! :)
 PRAGMA foreign_keys = ON;
 
 DROP TABLE IF EXISTS peliculas;

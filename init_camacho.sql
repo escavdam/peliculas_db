@@ -1,8 +1,8 @@
+-- No necesitamos añadir el id al insertar peliculas, ya tenemos el autoincremento en la tabla!
 DROP TABLE IF EXISTS peliculasPendientes;
 DROP TABLE IF EXISTS peliculas;
 DROP TABLE IF EXISTS usuarios;
 PRAGMA foreign_keys = ON;
-
 
 CREATE TABLE IF NOT EXISTS usuarios(
     'id' INTEGER NOT NULL UNIQUE,
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS peliculasPendientes(
 );
 
 INSERT INTO 'peliculas' (id, titulo, genero, año, director) VALUES 
-(1, 'The Matrix', 'Ciencia Ficción', 1999, 'The Wachowskis'), --no hace falta añadir el id!
+(1, 'The Matrix', 'Ciencia Ficción', 1999, 'The Wachowskis'),
 (2, 'Inception', 'Ciencia Ficción', 2010, 'Christopher Nolan'),
 (3, 'The Shawshank Redemption', 'Drama', 1994, 'Frank Darabont'),
 (4, 'The Godfather', 'Drama', 1972, 'Francis Ford Coppola'),

@@ -1,3 +1,5 @@
+-- Hay algunas inconsistencias que no afectan al código, debes quedarte con una convención para nombrar tus tablas y columnas y seguir esa convención en todo el código.
+
 DROP TABLE IF EXISTS Pelis_Pendientes;
 DROP TABLE IF EXISTS peliculas;
 DROP TABLE IF EXISTS usuarios;
@@ -25,7 +27,7 @@ CREATE TABLE IF NOT EXISTS 'peliculas'(
 
 CREATE TABLE IF NOT EXISTS 'Pelis_Pendientes'(
     'id' INTEGER NOT NULL,
-    'pelicula_No_Vista' INTEGER NOT NULL,
+    'pelicula_No_Vista' INTEGER NOT NULL, 
     'usuario' INTEGER NOT NULL,
  PRIMARY KEY ('id' AUTOINCREMENT)
  FOREIGN KEY ('pelicula_No_Vista') REFERENCES 'peliculas'('id')     
@@ -37,7 +39,8 @@ INSERT INTO 'usuarios' (nombre, email) VALUES
 ('Alberto', 'kokointo@gmail.com'),
 ('Kiko', 'MegustanLosKikos@gmail.com');
 
-INSERT INTO 'peliculas' (titulo, genero, año, director) VALUES ('Django', 'western', 2012, 'Quentin Tarantino'),
+INSERT INTO 'peliculas' (titulo, genero, año, director) VALUES 
+('Django', 'western', 2012, 'Quentin Tarantino'),
 ('Interstellar', 'Drama', 2014, 'Christopher Nolan'),
 ('El corral, una fiesta muy bestia', 'comedia', 2006, 'Steve Oedekerk'),
 ('El gato con botas: Los tres diablos', 'animacion', 2012, 'Raman Hui'),

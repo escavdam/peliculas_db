@@ -53,6 +53,7 @@ INSERT INTO users(user_name, fav_movie) VALUES
 INSERT INTO whitelist(user, movie) VALUES
 (1,1),
 (2,6);
+
 /*
 --Actualizar los usuarios
 UPDATE users

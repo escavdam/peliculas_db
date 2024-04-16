@@ -1,8 +1,9 @@
+-- Podemos simplificar las sentencias de insert en una sola
+-- Faltaria una tabla de peliculas pendientes
 PRAGMA foreign_keys = ON;
 
 DROP TABLE IF EXISTS peliculas;
 DROP TABLE IF EXISTS usuarios;
-
 
 CREATE TABLE IF NOT EXISTS 'peliculas'(
     'id' INTEGER NOT NULL UNIQUE,
